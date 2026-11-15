@@ -1,5 +1,7 @@
 # Yeelight for Flexbar
 
+**English** · [Русский](README.ru.md) · [Español](README.es.md) · [简体中文](README.zh-CN.md)
+
 ![Yeelight for Flexbar: FlexDesigner panel preview with all five Yeelight controls and three fixtures from the Color Icon Pack](.marketplace/repository-cover.png)
 
 Control Yeelight lights from Flexbar directly over the local network.
