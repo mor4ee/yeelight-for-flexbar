@@ -9,7 +9,6 @@ const type = (x,y,s,t,color='#f3f6f4',weight=400,spacing=0) =>
 const box = (x,y,w,h,color)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="22" fill="${color}" stroke="#30383e"/>`;
 async function main(){
   const bg = Buffer.from(`<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640">
-  <rect width="1280" height="640" fill="#07090c"/>
   ${box(18,18,812,454,'#10151a')}${box(844,18,418,186,'#142c26')}${box(844,218,418,254,'#1b1927')}${box(18,486,1244,136,'#15191e')}
   ${type(52,65,18,'FLEXBAR   /   COMMUNITY PLUGIN','#85eaca',650,3)}
   ${type(48,150,83,'Yeelight for Flexbar','#ffffff',700,-3)}
