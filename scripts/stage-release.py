@@ -31,8 +31,12 @@ with ZipFile(archive) as z:
 downloads = [archive]
 for folder, label, count, sha in [
     ("full","Vector",30,"ab5b162cee8c67bb3153bf36d591459ebddd536c9cf33dae674666909ed85c1f"),
-    ("color","Color",70,"ba21b52761f15ce6a58d29cc01ed01e6b6984df58b6f30252ac823dbb7461785")]:
+    ("color","Color",84,"4f557f44fc579a133c19a35aa15a6b1276741b988b994765ffd89bfb05ca99ec")]:
     path = root/"Icon_Pack"/folder/("Yeelight "+label+" Icon Pack.iconpack")
+    if label == "Color":
+        prefix = "data:image/png;base64,"
+        thumbnail = read(path)["thumbnail"]
+        assert thumbnail.startswith(prefix) and base64.b64decode(thumbnail[len(prefix):], validate=True)[16:24] == bytes.fromhex("00000bb800000098"), path.name
     assert len(read(path)["data"]) == count and hashlib.sha256(path.read_bytes()).hexdigest() == sha, path.name
     downloads.append(path)
 out = root/"release"/("v"+version)

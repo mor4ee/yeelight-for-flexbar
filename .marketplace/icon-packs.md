@@ -2,8 +2,17 @@
 
 Submit two **Iconpack** entries from the author's profile, not as plugins.
 Suggested content version for each: **1.0.0** (independent of the host version
-in the exported file). Select Windows for verified usage; choose the closest
-lighting/smart-home category actually offered by the form.
+in the exported file).
+
+In the observed Iconpack form, use **Artistic**; it has no OS selector.
+The gallery PNG and the listing thumbnail are separate. Keep the gallery
+preview attached, and include a root-level `thumbnail` PNG data URL in the
+`.iconpack`. The FlexDesigner exporter renders up to 18 icons on a transparent
+3000 × 152 strip. The public Software LOGO pack's embedded PNG matches its
+FlexGate card thumbnail byte for byte. The optional
+`scripts/render-iconpack-thumbnails.cjs` tool regenerates our strips.
+The [official upload guide](https://flexdocumentation.readthedocs.io/en/latest/troubleshoting/flexgate.html)
+describes the form, but does not specify this embedded field.
 
 ## Yeelight Vector Icon Pack
 
@@ -19,8 +28,8 @@ Preview: `vector-preview.png`.
 
 ## Yeelight Color Icon Pack
 
-14 lighting fixtures in 70 transparent color icons. Each fixture has an unlit
-version plus pale yellow, red, blue and green glow variants. Use a dark
+14 lighting fixtures in 84 transparent color icons. Each fixture has an unlit
+version plus pale yellow, red, blue, green and Multicolor glow variants. Use a dark
 background to bring out the glow. Assign Off and your preferred On color
 independently in Foreground; glow colors are part of the artwork and do not
 track the light automatically.
