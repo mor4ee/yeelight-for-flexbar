@@ -37,13 +37,15 @@ The plugin works without either pack. Import a downloaded `.iconpack` from
 select each state with the arrows beside the preview, assign its icon in
 Foreground, apply the changes and upload the layout to your Flexbar.
 
-- [Yeelight Vector Icon Pack](Icon_Pack/full/Yeelight%20Vector%20Icon%20Pack.iconpack):
-  15 fixtures, each with white On and crossed-out Off artwork on transparency.
-- [Yeelight Color Icon Pack](Icon_Pack/color/Yeelight%20Color%20Icon%20Pack.iconpack):
-  14 fixtures, each with Off, four solid glow colors and a Multicolor gradient. A dark background works best.
+[Yeelight Vector Icon Pack](Icon_Pack/full/Yeelight%20Vector%20Icon%20Pack.iconpack):
+15 fixtures, each with white On and crossed-out Off artwork on transparency.
 
-Preview the artwork: [Vector gallery](.marketplace/vector-preview.png) ·
-[Color gallery](.marketplace/color-preview.png).
+![Vector pack: 15 pairs of On and Off icons](.marketplace/vector-preview.png)
+
+[Yeelight Color Icon Pack](Icon_Pack/color/Yeelight%20Color%20Icon%20Pack.iconpack):
+14 fixtures, each with Off, four solid glow colors and a Multicolor gradient. A dark background works best.
+
+![Color pack: 14 fixtures in six variants each](.marketplace/color-preview.png)
 
 Imported artwork retains its own color; the native Foreground color picker
 does not tint it. This is an independent community project, not an official
