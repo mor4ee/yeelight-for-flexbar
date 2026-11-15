@@ -1,0 +1,30 @@
+name: Feature request
+description: Suggest an improvement or supported Yeelight scenario
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: Describe the task you want to perform from Flexbar.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Relevant Yeelight model
+  - type: checkboxes
+    id: local-only
+    attributes:
+      label: Local-only requirement
+      options:
+        - label: This feature can operate without Yeelight Cloud or Internet access.
+          required: true

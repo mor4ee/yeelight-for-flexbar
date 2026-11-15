@@ -1,0 +1,26 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": ".test-dist",
+    "rootDir": ".",
+    "noEmit": false,
+    "sourceMap": true
+  },
+  "include": [
+    "src/backend/protocol/**/*.ts",
+    "src/backend/catalog/**/*.ts",
+    "src/backend/connection/**/*.ts",
+    "src/backend/discovery/**/*.ts",
+    "src/backend/state/**/*.ts",
+    "src/backend/units/**/*.ts",
+    "src/frontend/model/**/*.ts",
+    "tests/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".test-dist"
+  ]
+}

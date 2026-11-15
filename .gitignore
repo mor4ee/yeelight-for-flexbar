@@ -1,0 +1,27 @@
+node_modules/
+dist/
+.test-dist/
+.v1-build/
+.hardware-dist/
+release/
+*.log
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+*.flexplugin
+com.mor4ee.yeelight.plugin/backend/
+com.mor4ee.yeelight.plugin/logs/
+.env
+.env.*
+!.env.example
+
+# Public distribution files only. Design history includes local paths,
+# third-party references and trial exports; never bulk-stage it for release.
+/Icon_Pack/*
+!/Icon_Pack/full/
+!/Icon_Pack/color/
+/Icon_Pack/full/*
+/Icon_Pack/color/*
+!/Icon_Pack/full/Yeelight Vector Icon Pack.iconpack
+!/Icon_Pack/color/Yeelight Color Icon Pack.iconpack

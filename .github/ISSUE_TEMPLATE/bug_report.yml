@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible problem with the plugin
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include Wi-Fi credentials, tokens, or unrelated packet captures.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version or commit
+      placeholder: 0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: flexstudio-version
+    attributes:
+      label: FlexStudio version
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Yeelight model and firmware
+    validations:
+      required: true
+  - type: dropdown
+    id: lan-control
+    attributes:
+      label: Is Yeelight LAN Control enabled?
+      options:
+        - "Yes"
+        - "No"
+        - "Unknown"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Include the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant sanitized logs
+      render: text

@@ -1,0 +1,36 @@
+name: Prepare release files
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '26.13.1'
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check tag
+        if: github.ref_type == 'tag'
+        run: |
+          $version = (Get-Content package.json -Raw | ConvertFrom-Json).version
+          if ($env:GITHUB_REF_NAME -ne "v$version") { throw "Tag and manifest version must agree" }
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      - run: npm run validate
+      - run: npm run pack
+      - run: python scripts/stage-release.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: yeelight-release-files
+          path: release/v*/
+          if-no-files-found: error
