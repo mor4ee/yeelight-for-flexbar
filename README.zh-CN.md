@@ -30,13 +30,11 @@
 
 不安装图标包也可以使用插件。在 FlexDesigner 中打开 **Foreground → Icon pack → Import**，导入下载的 `.iconpack` 文件。对于 On/Off 控件，使用预览旁的箭头逐一选择状态并指定图标，应用更改后将布局上传至 Flexbar。
 
+<img src=".marketplace/icon-packs-preview.png" alt="Yeelight 图标包：15 对矢量开关图标及 84 款彩色图标，每种灯具六款配色" width="100%">
+
 [Yeelight Vector Icon Pack](Icon_Pack/full/Yeelight%20Vector%20Icon%20Pack.iconpack) — 15 种灯具，每种都有透明背景的白色开启图标和带斜线的关闭图标。
 
-![矢量图标包：15 对灯具开关状态图标](.marketplace/vector-preview.png)
-
 [Yeelight Color Icon Pack](Icon_Pack/color/Yeelight%20Color%20Icon%20Pack.iconpack) — 14 种灯具，每种各有六款图标：熄灭、四种单色发光效果以及 Multicolor 多彩渐变。深色背景更能衬出光晕。
-
-![彩色图标包：14 种灯具，每种有六款图标](.marketplace/color-preview.png)
 
 导入的图标会保留原有颜色，Foreground 中的颜色选择器不能为其重新着色。本项目由社区独立开发，并非 Yeelight 官方产品。
 

@@ -30,13 +30,11 @@ Puedes descargar el complemento, los dos paquetes opcionales de iconos y las sum
 
 Ambos paquetes son opcionales. Para importar un archivo `.iconpack` descargado, abre **Foreground → Icon pack → Import** en FlexDesigner. En el botón On/Off, selecciona cada estado con las flechas, asígnale su icono, aplica los cambios y carga la configuración en tu Flexbar.
 
+<img src=".marketplace/icon-packs-preview.png" alt="Paquetes Yeelight: 15 pares vectoriales On/Off y 84 iconos en color con seis variantes por luminaria" width="100%">
+
 [Yeelight Vector Icon Pack](Icon_Pack/full/Yeelight%20Vector%20Icon%20Pack.iconpack) — 15 tipos de luminarias, cada uno con un icono blanco sobre fondo transparente para On y una versión tachada para Off.
 
-![Paquete vectorial: 15 pares de iconos de encendido y apagado](.marketplace/vector-preview.png)
-
 [Yeelight Color Icon Pack](Icon_Pack/color/Yeelight%20Color%20Icon%20Pack.iconpack) — 14 tipos de luminarias con seis variantes cada uno: apagada, cuatro colores de luz uniformes y un degradado Multicolor. El resplandor se aprecia mejor sobre un fondo oscuro.
-
-![Paquete en color: 14 luminarias con seis variantes cada una](.marketplace/color-preview.png)
 
 Los iconos importados conservan sus colores; el selector de color de Foreground no los modifica. Este es un proyecto independiente de la comunidad, no un producto oficial de Yeelight.
 
